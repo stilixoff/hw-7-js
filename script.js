@@ -30,7 +30,7 @@ console.log(getTotalTaxes.call(ukraine));
 function getMySalary(val) {
     let res = {};
     res.salary = Math.floor(1500 + Math.random() * (2000 + 1 - 1500));
-    res.taxes = Math.floor(val.tax * res.salary);
+    res.taxes = Math.floor(this.tax * res.salary);
     res.profit = res.salary - res.taxes;
     return res;
 }
